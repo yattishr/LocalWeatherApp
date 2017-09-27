@@ -1,0 +1,69 @@
+Sample CodePen: 
+https://codepen.io/freeCodeCamp/full/bELRjV
+
+Reverse Geocoding by Google:
+https://developers.google.com/maps/documentation/javascript/examples/geocoding-reverse
+
+freeCodeCamp Weather API: https://fcc-weather-api.glitch.me/
+https://fcc-weather-api.glitch.me/api/current?lat=-26.079400999999997&lon=28.2205329
+
+Google Maps JavaScript API Key:
+AIzaSyAA-uGAfSeRufFnAeBEchD2ehYQOu9IM70
+
+OpenWeatherMap:
+https://home.openweathermap.org/api_keys
+https://openweathermap.org/current
+API Key: cd8b396e70600b9f12a70dbfcf2ff834
+
+MapZen: 
+https://mapzen.com/dashboard
+API Key: mapzen-YVDS65B
+MapZen Endpoint: https://search.mapzen.com/v1/reverse?point.lat=48.858268&point.lon=2.294471&api_key=mapzen-YVDS65B
+
+____________________________________________________________________________________
+
+GeoLocation jQuery Code:
+<script>
+  // Only change code below this line.
+  if(navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(function(position) {
+      $("#data").html("latitude: " + position.coords.latitude + "<br>longitude: " + position.coords.longitude);
+    })
+  }
+  
+  
+  // Only change code above this line.
+</script>
+<div id = "data">
+  <h4>You are here:</h4>
+  
+</div>
+____________________________________________________________________________________
+
+
+Some flickr backgrounds:
+https://farm5.staticflickr.com/4337/37088648005_6fb58fce22_h.jpg
+https://farm7.staticflickr.com/6209/6038761491_bd4e1f0e5c_b.jpg
+https://farm9.staticflickr.com/8243/8474131740_5c2944948d_b.jpg
+https://farm9.staticflickr.com/8467/8101064949_177b3928e3_b.jpg
+
+
+
+
+
+
+        <div class="row">
+            <div class="card dislpay-card">
+                <div class="card-header">
+                    <i class="fa fa-sun-o fa-2x fa-pull-right fa-border"></i>
+                    <h1 class="card-title text-center">21°</h1>
+                    <p class="card-text text-center" id="message">Johannesburg,</p>
+                    <p class="card-text text-center" id="author">South Africa</p>
+                </div>
+            </div>            
+        </div>
+
+
+https://search.mapzen.com/v1/reverse?point.lat=48.858268&point.lon=2.294471&api_key=mapzen-YVDS65B
+
+

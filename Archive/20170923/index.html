@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <title>freeCodeCamp Zipline ~ Weather App</title>
+            <link rel="stylesheet" href="styles/styles.css">        
+            <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.1">
+            <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+            <meta name="description" content="">
+            <meta name="author" content="">
+
+            <title>Random Quote Generator</title>
+
+            <!-- Bootstrap core CSS -->
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+            <!-- Font Awesome icons -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>            
+            <script src="js/scripts.js"></script>
+            
+            <script>
+                $(document).ready(function() { 
+                    window.onload = function() {
+                        getGeoPosition();
+                        console.log("Inside onload function...")
+                    }
+
+                    $("#temp").on("click", function() {
+                        convertTemp();
+                    });    
+                });
+            </script>
+        
+        
+        <body>
+        <div class="container">
+            <!-- use formatting to change the color and style of the jumbotron control -->
+            <div class="jumbotron">
+                <h1 class="text-center">Local Weather App</h1>
+            </div>            
+        </div>  
+         
+        <div class="row">
+            <div class="card dislpay-card">
+                <p class="text-center"><span id="clickableAwesomeFont" onclick="convertTemp()"><i class="fa fa-sun-o fa-2x fa-border"></span></i></p>
+                <div class="card-header">
+                    <h1 class="card-title text-center" id="temp">21°</h1>
+                    <p class="card-text text-center" id="city">Johannesburg,</p>
+                    <p class="card-text text-center" id="country">South Africa</p>
+                </div>
+                <div class="card-body">
+                    <p class="card-text" id="current_conditions">Current Weather Conditions: </p>
+                    <p class="card-text" id="current_conditions">Sunny and Warm</p>
+                </div>
+            </div>            
+        </div>            
+            
+        <!-- div class="row">
+            <div class="card dislpay-time">
+                <div class="card-header">
+                    <p class="card-text text-center" id="message">15:45</p>
+                </div>
+            </div>            
+        </div -->            
+                          
+        </body>
+    </head>
+</html>

@@ -1,0 +1,69 @@
+body { 
+    /*background-image: url('https://source.unsplash.com/random/800x600'); */
+    background-image: url('https://farm5.staticflickr.com/4337/37088648005_6fb58fce22_h.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: auto;
+}
+
+.dislpay-card {
+    width: 800px;
+    height: 250px; 
+    position:absolute; /*it can be fixed too*/
+    left:0; right:0;
+    top: 0; bottom:0;
+    margin: auto;
+    background-color: transparent !important;
+    font-family: verdana;
+    font-weight: bold;
+    font-size: 200%;
+    color: whitesmoke;
+}      
+
+
+.dislpay-time {
+    width: 800px;
+    height: 150px; 
+    position:absolute; /*it can be fixed too*/
+    left:0; right:0;
+    top: 0; bottom:0;
+    margin: auto;
+    background-color: transparent !important;
+    font-family: verdana;
+    font-weight: bold;
+    font-size: 200%;
+    color: whitesmoke;
+} 
+
+.jumbotron {
+    background-color: transparent !important;    
+    color: white;    
+    border-radius: 1;
+    height: 100px;
+}
+
+#current_conditions {
+    font-family: verdana;
+    font-weight: normal;
+    font-size: 20px;
+    text-align: center;
+}
+
+.center {
+    position:absolute;
+    height: X px;
+    width: Y px;
+    left:50%;
+    top:50%;
+    margin-top:- X/2 px;
+    margin-left:- Y/2 px;
+} 
+
+i {
+    text-align:center;
+}
+
+#clickableAwesomeFont {
+     cursor: pointer
+}
