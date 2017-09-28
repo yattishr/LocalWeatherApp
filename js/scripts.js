@@ -35,29 +35,55 @@ function toProperCase(s)
 
 function getDisplayIcon(desc) {
     var desc = desc.toLowerCase();
+    var displayIcons = ["fa fa-sun-o fa-2x fa-border", "fa fa-cloud fa-2x fa-border", "fa fa-bolt fa-2x fa-border", "fa fa-snowflake-o fa-2x fa-border", "fa fa-tint fa-2x fa-border", "fa fa-umbrella fa-2x fa-border"];
+    var displayIconsHtml = "<span id='clickableAwesomeFont' onclick='convertTemp()'><i class='";
     switch (desc) {
         case 'drizzle': 
             console.log("drizzle icon...")
             $('body').css('backgroundImage', 'url(https://farm5.staticflickr.com/4179/33743421574_4556e24569_h.jpg)');
+            displayIconsHtml += displayIcons[4];
+            displayIconsHtml += "' id='displayIcon'></span></i>"
+            console.log(displayIconsHtml);
+            $("#clickableAwesomeFont").html(displayIconsHtml);            
             break;
         case 'clouds':
             console.log("clouds icon...")
             $('body').css('backgroundImage', 'url(https://farm6.staticflickr.com/5207/5333050969_ae485a6e38_b.jpg)');
+            displayIconsHtml += displayIcons[1];
+            displayIconsHtml += "' id='displayIcon'></span></i>"
+            console.log(displayIconsHtml);
+            $("#clickableAwesomeFont").html(displayIconsHtml);
             break;  
         case 'rain':
             console.log("rain icon...")
             $('body').css('backgroundImage', 'url(https://farm5.staticflickr.com/4419/35500469724_709b76b7ee_h.jpg)');
+            displayIconsHtml += displayIcons[5];
+            displayIconsHtml += "' id='displayIcon'></span></i>"
+            console.log(displayIconsHtml);
+            $("#clickableAwesomeFont").html(displayIconsHtml);            
             break;            
         case 'snow':
             console.log("snow icon...")
             $('body').css('backgroundImage', 'url(https://farm5.staticflickr.com/4182/34342963701_bc765e05a6_h.jpg)');
+            displayIconsHtml += displayIcons[3];
+            displayIconsHtml += "' id='displayIcon'></span></i>"
+            console.log(displayIconsHtml);
+            $("#clickableAwesomeFont").html(displayIconsHtml);            
             break;       
         case 'clear':
-            $('body').css('backgroundImage', 'url(https://farm7.staticflickr.com/6209/6038761491_bd4e1f0e5c_b.jpg)');
+            $('body').css('backgroundImage', 'url(https://farm7.staticflickr.com/6209/6038761491_bd4e1f0e5c_b.jpg)'); 
             console.log("clear icon...")
+            displayIconsHtml += displayIcons[0];
+            displayIconsHtml += "' id='displayIcon'></span></i>"
+            console.log(displayIconsHtml);            
+            $("#clickableAwesomeFont").html(displayIconsHtml);
             break;            
         case 'thunderstorm':
             $('body').css('backgroundImage', 'url(https://farm4.staticflickr.com/3935/15475466948_1e912dc488_h.jpg)');
+            displayIconsHtml += displayIcons[2];
+            displayIconsHtml += "' id='displayIcon'></span></i>"
+            console.log(displayIconsHtml);
+            $("#clickableAwesomeFont").html(displayIconsHtml);            
             console.log("thunderstorm icon...")
             break;            
         default:
