@@ -124,3 +124,9 @@ Thunderstorms:
 https://farm4.staticflickr.com/3935/15475466948_1e912dc488_h.jpg
 
 
+Github Repo:
+https://github.com/yattishr/LocalWeatherApp.git
+
+
+
+<i class="fa fa-sun-o fa-2x fa-border" id="displayIcon">
