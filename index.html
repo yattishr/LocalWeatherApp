@@ -22,11 +22,10 @@
             
             <script>
                 $(document).ready(function() { 
-                    window.onload = function() {
-                        getGeoPosition();
+                    window.onload = function() {                        
                         console.log("Inside onload function...")
                     }
-
+                    getGeoPosition();
                     $("#temp").on("click", function() {
                         convertTemp();
                     });    
